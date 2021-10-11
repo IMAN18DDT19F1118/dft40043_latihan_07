@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang Pendaftaran</title>
+</head>
+<body>
+    <h1>Borang Pendaftaran Pelajar PTSS</h1>
+        <p>Selamat Datang ke Borang Pendaftaran PTSS</p>
+
+        <label for="Kos">Pilih Kos Anda:</label>
+
+        <select name="Kos" id="Kos">
+          <option value="Digital">Digital Multimedia</option>
+          <option value="Web">Web Programming</option>
+          <option value="Admin">Database Adminstator</option>
+          <option value="Design">Web Design</option>
+        </select>
+    
+    <form action="simpan.php" method="post">
+        <table>
+            <tr>
+            <td><label for="nama">Nama Anda</label></td>
+            <td><input type="text" name="nama" id="nama" size="50" required placeholder="isi nama penuh" autofocus></td>
+        </tr>
+        <tr>
+            <td><label for="note">Password</label></td>
+            <td><input type="password" name="note" id="note" minlength="8" maxlength="16" size="50" required placeholder="melebihi 8-16" required></input></td>
+        </tr>
+        <tr></tr>
+        <td><label for="daftar">Sudah Berdaftar</label></td>
+        <td><input type="radio" name="daftar" id="daftar" value="Ya/ya"></input>Yes/yes</td>
+        <td><input type="radio" name="daftar" id="daftar" value="Tidak/tidak"></input>No/no</td>
+        </tr>
+        <tr>
+            
+    </table>
+    
+    <button type="submit">Simpan</button>
+    <button type="reset">Batal</button>
+    </form>
+
+</body>
+</html>
